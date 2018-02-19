@@ -1,3 +1,4 @@
+'use strict'
 // write a function that accepts `num`, a valid non-negative integer, and `parts`,
 // a positive integer representing how many parts to evenly split `num`,
 // and returns an array of these values
@@ -6,6 +7,9 @@
 //      splitIntoInt(8, 4)  // [2,2,2,2]
 //      splitIntoInt(10, 4) // [2,2,3,3]
 //      splitIntoInt(20, 6) // [3,3,3,3,4,4]
+
+module.exports = splitIntoInt
+
 function splitIntoInt(num, parts) {
     let array = Array(parts).fill(Math.floor(num / parts))
 
@@ -18,7 +22,3 @@ function splitIntoInt(num, parts) {
 
     return array
 }
-
-console.log(splitIntoInt(8, 4))
-console.log(splitIntoInt(10, 4))
-console.log(splitIntoInt(20, 6))
