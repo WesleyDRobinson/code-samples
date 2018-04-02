@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Restaurant Locator - powered by Algolia</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="./stars.css">
+
+    <!-- hyperHTML for building web components -->
+    <script src="//unpkg.com/hyperhtml@latest/min.js"></script>
+    <script src="//unpkg.com/hyperhtml-element@latest/min.js"></script>
+    <script>window.customElements || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/document-register-element/1.6.2/document-register-element.js"><' + '/script>')</script>
+</head>
+<body class="helvetica overflow-hidden" style="background: url(/graphics/background.png) repeat;">
+
+<div class="vh-100 flex flex-column justify-center">
+    <restaurant-search></restaurant-search>
+</div>
+
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="bundle.js"></script>
+</body>
+</html>
