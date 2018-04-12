@@ -26,3 +26,7 @@ Overall, instantsearch.js saved me some boilerplate JS, sure. But depending on t
 For example, I added a "_geoloc" property to the records (`manipulate.js`) so I could use the GeoSearch functionality, which was simple to add into the JS library searches in a previous project.
 But when attempting to layer it into instantsearch.js, I found either my code or config would need quite a bit of refactoring.
 Maybe just an hour or two more, but that's a lot considering the timeline for this project! :)
+
+### Next steps
+
+Future work could include finishing the geolocation implementation, automating updates for the index in Algolia, and perhaps more interactive mapping features.
