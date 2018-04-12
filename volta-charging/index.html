@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Volta Stations</title>
+
+    <!-- tachyons.io is an awesome CSS system-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- instantsearch CSS-->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.7.1/dist/instantsearch-theme-algolia.min.css">
+</head>
+<body class="avenir near-black bg-near-white">
+
+<div class="mt4 w-100">
+    <h1 class="tc">Search Volta Chargers</h1>
+
+    <div id="search-box" class="mw6 tc center mb2"></div>
+
+    <div id="refinements" class="pa2 flex justify-around mb2 overflow-x-scroll">
+        <div id="refinement-list-state" class="w-50 w-20-ns"></div>
+        <div id="refinement-list-city" class="w-50 w-20-ns"></div>
+        <div id="refinement-list-zip" class="w-50 w-20-ns"></div>
+        <div id="refinement-list-status" class="w-50 w-20-ns"></div>
+    </div>
+
+    <div id="hits" class=""></div>
+</div>
+
+<!-- instantsearch.js -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@1/dist/instantsearch-preact.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
