@@ -1,3 +1,5 @@
+![volta chargers screenshot](./helpers/screen_shot.png)
+
 # Volta Code Challenge Prompt
 > The goal of this challenge is to demonstrate your skills, with a tool of your choice, taking data and turning it into something meaningful.
 
@@ -30,3 +32,4 @@ Maybe just an hour or two more, but that's a lot considering the timeline for th
 ### Next steps
 
 Future work could include finishing the geolocation implementation, automating updates for the index in Algolia, and perhaps more interactive mapping features.
+Some simple animations ([`animate.css`](https://daneden.github.io/animate.css/)) and wrapping it up as a web component would also be cool!
