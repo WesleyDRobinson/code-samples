@@ -1,4 +1,23 @@
+'use strict'
 const assert = require('assert')
+
+// 16 April 2018 -- interview with Samsara
+
+const {SetCard, SetGame} = require('./gameOfSet')
+
+const card = new SetCard('prop1', 'attr2', 5)
+let expected = '{"shape":"prop1","shading":"attr2","count":5}'
+let actual = card.toString()
+assert.equal(actual, expected, 'should create a Set Card')
+
+const setGame = new SetGame()
+const cardsToDeal = Math.floor(Math.random() * 27)
+
+setGame.dealCard(cardsToDeal)
+assert.equal(setGame.table.length, cardsToDeal)
+assert.equal(setGame.deck.length, 27 - cardsToDeal)
+
+// 14-15 Feb 2018 -- codewars
 
 const biggestTriangleInt = require('./largestTriangleFromPointsInSphere')
 
@@ -18,11 +37,15 @@ assert.equal(triangleValue[0], triangleTest[0], 'triangle tally does not match')
 assert.equal(triangleValue[1], triangleTest[1], 'largest triangle Area is not matching')
 assert.deepEqual(triangleValue[2], triangleTest[2], 'largest triangle coordinates do not match')
 
+// codefights -- February 2018
+
 const splitIntoInt = require('./splitIntegerIntoParts')
 
 assert.deepEqual(splitIntoInt(8, 4), [2, 2, 2, 2])
 assert.deepEqual(splitIntoInt(10, 4), [2, 2, 3, 3])
 assert.deepEqual(splitIntoInt(20, 6), [3, 3, 3, 3, 4, 4])
+
+// codewars -- feb
 
 const solvableSudoku = require('./sudokuChecker')
 const gridTrue = [
@@ -52,6 +75,7 @@ const gridFalse = [
 assert.equal(solvableSudoku(gridTrue), true)
 assert.equal(solvableSudoku(gridFalse), false)
 
+// winter 2018 -- codewars
 const isCryptSolution = require('./isCryptSolution')
 
 let crypt = ["SEND", "MORE", "MONEY"]
