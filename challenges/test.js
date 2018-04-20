@@ -1,13 +1,31 @@
 'use strict'
 const assert = require('assert')
 
+// 19 April 2018 -- interview with Volta
+
+const {bruteForce} = require('./largestRectangleArea')
+let input = [2, 1, 3, 1]
+let expected = 4
+let actual = bruteForce(input)
+assert.equal(actual, expected, 'should find largest area' + expected)
+
+input = [2, 1, 3, 0, 5, 4, 3, 2, 1]
+expected = 9
+actual = bruteForce(input)
+assert.equal(actual, expected, 'should find largest area')
+
+input = [2, 1, 5, 6, 2, 3]
+expected = 10
+actual = bruteForce(input)
+assert.equal(actual, expected, 'should find largest area')
+
 // 16 April 2018 -- interview with Samsara
 
 const {SetCard, SetGame} = require('./gameOfSet')
 
 const card = new SetCard('prop1', 'attr2', 5)
-let expected = '{"shape":"prop1","shading":"attr2","count":5}'
-let actual = card.toString()
+expected = '{"shape":"prop1","shading":"attr2","count":5}'
+actual = card.toString()
 assert.equal(actual, expected, 'should create a Set Card')
 
 const setGame = new SetGame()
