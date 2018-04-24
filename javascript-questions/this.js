@@ -1,3 +1,4 @@
+
 console.log("\nQuestion 1:");
 console.log(this);  
 //(a) When running in the Browser, what will be on the console here?
@@ -40,7 +41,7 @@ f1();
 
 //(b) strict mode, Browser:, what will be on the console here?
 
-/* {}, strict mode is similar to using IIFE pattern in this case */
+/* undefined */
 
 //(c) Non-strict, Node, what will be on the console here?
 
