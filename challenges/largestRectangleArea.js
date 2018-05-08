@@ -27,6 +27,9 @@ function bruteForce(heights) {
     return ret.max
 }
 
+// also submitted to leetcode:
+// https://leetcode.com/submissions/detail/150848097/
+
 // More elegant solutions exist! Including an O(n) solution using Stack...
 // http://www.informatik.uni-ulm.de/acm/Locals/2003/html/judge.html
 // https://leetcode.com/problems/largest-rectangle-in-histogram/discuss/28933/Javascript-solution-with-some-explaination
